@@ -6,6 +6,11 @@
     --primary-color: #0f1b4c;
 }
 
+html,
+body {
+    scroll-behavior: smooth; /* Tạo hiệu ứng cuộn trang mượt mà khi click trên menu */
+}
+
 html {
     /* mặc định trình duyệt 16px để set cho font-size là 10px thì có công thức sau: 
      10 / 16 = 0.625 | 0.625 * 100 = 62.5% (62.5% tương đương là 10px)
