@@ -84,6 +84,7 @@ a {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center; /* căn giữa các phần tử bên trong theo chiều cao viewport */
     background: #e6f0ff;
     height: calc(100vh - 90px);
 }
@@ -129,15 +130,11 @@ a {
 }
 
 /*= Hero =*/
-.hero {
-    margin-top: 130px;
-}
-
-.hero .info {
+.hero-wrap .info {
     width: 51%; /* chuyển về % => lấy 559px / 1110px = 0.503... * 100% = 50.3 (làm tròn thành 51%) */
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.5; /* áp dụng công thức như bên dưới */
@@ -145,7 +142,7 @@ a {
     color: #687690;
 }
 
-.hero .title {
+.hero-wrap .title {
     margin-top: 8px;
     font-weight: 700;
     font-size: 6.2rem;
@@ -153,7 +150,7 @@ a {
     color: #000336;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     font-weight: 400;
     font-size: 1.8rem;
@@ -161,7 +158,7 @@ a {
     color: #5a6473;
 }
 
-.hero .hero-cta {
+.hero-wrap .hero-cta {
     min-width: 170px; /* đảm bảo nút luôn có kích thước nhỏ nhất là 170px, khi nội dung to lên thì nút cũng sẽ to lên */
     margin-top: 40px;
 }
